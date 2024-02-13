@@ -1,0 +1,339 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+:root {
+  /* color:hsl(276, 100%, 81%);
+color:hsl(276, 55%, 52%);
+color:hsl(271, 15%, 43%);
+color:hsl(206, 6%, 79%);
+color:hsl(271, 36%, 24%);
+color:hsl(270, 7%, 64%);
+color:hsl(293, 100%, 63%);
+color:hsl(264, 100%, 61%);
+color:hsl(0, 0%, 100%);
+color:hsl(270, 20%, 96%);
+color:hsl(271, 36%, 24%);
+color:hsl(289, 100%, 72%); 
+color:hsl(272, 41%, 93%); */
+  /* font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+}
+section {
+  width: 220px;
+  height: 425px;
+  border: 10px solid white;
+  border-radius: 25px 25px 20px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: hsl(270, 20%, 96%);
+  margin: 0 100px;
+  position: absolute;
+  left: 260px;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 585px;
+  height: 600px;
+  left: -175px;
+  top: 0;
+  z-index: -1;
+  border-radius: 0 0 50% 50%;
+}
+body::after {
+  content: "";
+  width: 585px;
+  height: 630px;
+  position: absolute;
+  background: hsl(270, 20%, 96%);
+  right: -200px;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 50% 50% 0 0;
+}
+
+.head_content {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  padding: 25px 10px 10px;
+  color: white;
+  font-size: 10px;
+  border-radius: 15px 15px 5px 5px;
+  position: relative;
+}
+.head_content::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 25px;
+  background: white;
+  border-radius: 20px;
+  top: -9px;
+  left: 20%;
+}
+.head_content img {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 1in;
+  border: 1px solid white;
+}
+
+.head_name {
+  margin-right: 76px;
+}
+
+.head_name p:first-of-type {
+  font-size: 8px;
+  font-weight: 600;
+}
+.head_name p:nth-of-type(2) {
+  font-size: 6px;
+  color: hsl(276, 100%, 81%);
+}
+
+.first_messages {
+  font-size: 7px;
+  color: hsl(276, 55%, 52%);
+  margin: 10px 0;
+}
+
+.first_messages div {
+  background-color: hsl(272, 41%, 93%);
+  padding: 5px;
+  margin: 6px 20px 0px 5px;
+  width: 105px;
+  height: 30px;
+  border-radius: 7px 7px 7px 1px;
+  line-height: 10px;
+}
+
+.second_messages div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+.second_messages img {
+  width: 30px;
+  margin: 0 3px;
+  border-radius: 10px;
+}
+
+.content_second_message {
+  font-size: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content_second_message div {
+  background-color: white;
+  padding: 6px;
+  margin: 6px 4px 0px 5px;
+  width: 95px;
+  height: 30px;
+  border-radius: 10px 10px 1px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 7px 1px;
+  line-height: 9.5px;
+}
+.content_second_message div:nth-of-type(2) {
+  width: 60px;
+  height: 20px;
+  margin-bottom: 3px;
+}
+
+.last_phone_messages p {
+  font-size: 6px;
+  color: hsl(276, 55%, 52%);
+  margin: 10px 0;
+  background-color: hsl(272, 41%, 93%);
+  padding: 6px;
+  margin: 2px 20px 0px 5px;
+  width: 95px;
+  border-radius: 7px 7px 7px 1px;
+  line-height: 9px;
+}
+
+.last_phone_messages p + div {
+  font-size: 8px;
+  margin: 10px 5px;
+}
+
+.last_phone_messages p + div .first_form div {
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 150px;
+  margin-bottom: 6px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  border-radius: 10px 10px 10px 5px;
+  overflow: hidden;
+}
+
+.first_form div label {
+  margin: 5px 0 5px 5px;
+  color: hsl(272, 41%, 93%);
+}
+
+.first_form div label span {
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 0px 0px 0 30px;
+}
+
+.first_form div + div label span {
+  margin: 0px 0px 0 45px;
+}
+
+.send_message {
+  color: white;
+}
+
+.second_form {
+  position: relative;
+  margin-top: 3px;
+}
+.second_form div input {
+  height: 30px;
+  width: 190px;
+  border: 0;
+  border-radius: 15px;
+  font-size: 9px;
+  padding-left: 20px;
+}
+.second_form div input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+#minute {
+  background: transparent;
+}
+
+.second_form div button {
+  position: absolute;
+  bottom: 5px;
+  right: 7px;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background: hsl(271, 36%, 24%);
+  color: white;
+  border-radius: 1in;
+  font-size: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple_paragraph {
+  font-size: 17px;
+  width: 400px;
+  line-height: 25px;
+  position: absolute;
+  right: 310px;
+}
+
+.simple_paragraph h1 {
+  color: hsl(271, 36%, 24%);
+  font-weight: 500;
+  margin: 20px 0;
+  height: 28px;
+  overflow: unset;
+}
+
+.simple_paragraph p {
+  font-size: 14px;
+  line-height: 30px;
+  color: hsl(270, 7%, 64%);
+}
+
+@media (max-width: 1310px) {
+  .simple_paragraph {
+    right: 10px;
+  }
+}
+@media (min-width: 880px) and (max-width: 999px) {
+  section {
+    left: 115px;
+  }
+}
+@media (max-width: 880px) {
+  body {
+    min-height: 140px;
+    flex-direction: column;
+  }
+  section {
+    margin-top: 50px;
+    position: unset;
+    margin-bottom: 00;
+  }
+  .simple_paragraph {
+    position: unset;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  body::before {
+    left: -400px;
+    top: -140px;
+  }
+  body::after {
+    right: -380px;
+    width: 570px;
+    height: 480px;
+  }
+  .simple_paragraph {
+    width: 270px;
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  .simple_paragraph h1 {
+    margin: 60px 0 15px;
+    font-size: 35px;
+    height: 33px;
+    width: 275px;
+  }
+  .simple_paragraph p {
+    font-size: 14px;
+    width: 268px;
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <section class="chat_content">
+    <div class="head_content">
+      <i class="fa-solid fa-angle-left"></i>
+      <img src="images/avatar.jpg" alt="avatar image">
+      <div class="head_name">
+        <p>Samuel Green</p>
+        <p>Available to Walk</p>
+      </div>
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </div>
+    <div class="first_messages">
+      <div>That sounds great. I’d be happy with that.</div>
+      <div>Could you send over some pictures of your dog, please?</div>
+    </div>
+    <div class="second_messages">
+      <div>
+        <img src="images/dog-image-1.jpg" alt="dog photos">
+        <img src="images/dog-image-2.jpg" alt="dog photos">
+        <img src="images/dog-image-3.jpg" alt="dog photos">
+      </div>
+      <div class="content_second_message">
+        <div>Here are a few pictures. She’s a happy girl!</div>
+        <div>Can you make it?</div>
+      </div>
+    </div>
+    <div class="last_phone_messages">
+      <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+      <div>
+        <form class="first_form">
+          <div>
+            <input id="minute" type="radio" name="test">
+            <label for="minute">30 minute walk <span>$29</span></label>
+          </div>
+          <div>
+            <input id="hour" type="radio" name="test">
+            <label for="minute">1 hour walk <span>$49</span></label>
+          </div>
+        </form>
+        <form class="second_form">
+          <div>
+            <input type="text" placeholder="Type a message...">
+            <button><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="simple_paragraph">
+    <h1>Simple booking</h1>
+    <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to
+      discuss arrangements and make bookings. Once the walk has been completed you can rate
+      your walker and book again all through the chat.</p>
+  </div>
+</body>
+
+</html>
